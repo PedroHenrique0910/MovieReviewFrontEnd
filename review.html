@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+	<title>Movie Review | Review</title>
+
+	<!-- Loading third party fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Loading main css file -->
+	<link rel="stylesheet" href="style.css">
+
+	<!--[if lt IE 9]>
+    <script src="js/ie-support/html5.js"></script>
+    <script src="js/ie-support/respond.js"></script>
+    <![endif]-->
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+	<div id="site-content">
+		<header class="site-header">
+			<div class="container">
+				<a href="index.html" id="branding">
+					<img src="images/logo.png" alt="" class="logo">
+					<div class="logo-copy">
+						<h1 class="site-title">Moview Review</h1>
+						<small class="site-description">Magia em Quadros</small>
+					</div>
+				</a> <!-- #branding -->
+
+				<div class="main-navigation">
+					<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+					<ul class="menu">
+						<li class="menu-item"><a href="index.html">Home</a></li>
+						<li class="menu-item current-menu-item"><a href="review.html">Movie review</a></li>
+						<li class="menu-item"><a href="about.html">Sobre</a></li>
+						<li class="menu-item"><a href="joinus.html">Junte-se a nós</a></li>
+						<li class="menu-item"><a href="https://www.linkedin.com/in/pedrohf0910/" target="_blank">Contato</a></li>
+					</ul> <!-- .menu -->
+				</div> <!-- .main-navigation -->
+			</div>
+		</header>
+		<main class="main-content">
+			<div class="container">
+				<div class="page">
+					<div class="breadcrumbs">
+						<a href="index.html">Home</a>
+						<span>Movie Review</span>
+					</div>
+
+					<div class="filters">
+						<select name="#" id="#" placeholder="Choose Category">
+							<option value="#">Action</option>
+							<option value="#">Drama</option>
+							<option value="#">Fantasy</option>
+							<option value="#">Horror</option>
+							<option value="#">Adventure</option>
+						</select>
+						<select name="#" id="#">
+							<option value="#">2012</option>
+							<option value="#">2013</option>
+							<option value="#">2014</option>
+						</select>
+					</div>
+
+					<div class="movie-list">
+						<!-- Filme 1 -->
+						<div class="movie movie-item" id="movie-tt3915174">
+							<!-- A classe "movie" agora inclui um ID específico -->
+							<figure class="movie-poster">
+								<img id="movie-poster-img-tt3915174" src="" alt="">
+							</figure>
+							<div class="movie-card">
+								<div class="movie-info">
+									<!-- Título e Sinopse -->
+									<div class="movie-titlereview">
+										<a href="https://www.primevideo.com/detail/Puss-in-Boots-The-Last-Wish/0QUF1IDVKBU70CZOI0Z8ZZT8I5" target="_blank">Puss in Boots: The
+											Last Wish</a>
+									</div>
+									<p class="movie-synopsis2">
+										Antes de conhecer Shrek e sua turma, Gato de Botas vive uma grande aventura ao
+										lado de Humpty Dumpty e Kitty Pata Mansa. Dispostos a roubar os feijões mágicos
+										do casal fora da lei Jack e Jill, o trio quer mesmo é conseguir a famosa gansa
+										que bota ovos de ouro. Porém, algumas coisas não estavam nos planos, e Gato vai
+										descobrir, meio atrasado, que tem um grande problema pela frente para conseguir
+										limpar o que ficou para trás: a sua honra.
+									</p>
+						
+									<!-- Informações adicionais e Estrelas agrupados em uma div -->
+									<div class="filmedetalheseavaliacao">
+										<ul class="filmedetalhes">
+											<li><strong>Data de Lançamento:</strong> 20 de dezembro de 2022</li>
+											<li><strong>Gênero:</strong> Animação, Aventura, Comédia</li>
+										</ul>
+									</div>
+						
+									<!-- Formulário para a opinião -->
+									<form id="opinion-form-tt3915174" class="opinion-form" data-movie-id="tt3915174">
+										<label for="opinion">Deixe sua opinião:</label>
+										<textarea class="opinion" name="opinion" rows="4" cols="50"></textarea>
+						
+										<button type="submit">Enviar Opinião</button>
+									</form>
+						
+									<!-- Contêiner para opiniões dos usuários -->
+									<div class="user-opinions-container" id="user-opinions-container-tt3915174"></div>
+								</div>
+							</div>
+						</div>
+						<!-- Filme 2 -->
+						<div class="movie movie-item" id="movie-tt1630029">
+							<!-- A classe "movie" agora inclui um ID específico -->
+							<figure class="movie-poster">
+								<img id="movie-poster-img-tt1630029" src="" alt="">
+							</figure>
+							<div class="movie-card">
+								<div class="movie-info">
+									<!-- Título e Sinopse -->
+									<div class="movie-titlereview">
+										<a href="https://tv.apple.com/br/movie/avatar-the-way-of-water/umc.cmc.5k5xo2espahvd6kcswi2b5oe9" target="_blank">Avatar: The Way of Water</a>
+									</div>
+									<p class="movie-synopsis2">Após formar uma família, Jake Sully e Ney'tiri fazem de tudo para ficarem juntos. No entanto, eles devem sair de casa e explorar as regiões de Pandora quando uma antiga ameaça ressurge, e Jake deve travar uma guerra difícil contra os humanos.</p>
+						
+									<!-- Informações adicionais e Estrelas agrupados em uma div -->
+									<div class="filmedetalheseavaliacao">
+										<ul class="filmedetalhes">
+											<li><strong>Data de Lançamento:</strong> 15 de dezembro de 2022</li>
+											<li><strong>Gênero:</strong> Ficção Científica, Ação, Aventura</li>
+										</ul>
+									</div>
+						
+									<!-- Formulário para a opinião -->
+									<form id="opinion-form-tt1630029" class="opinion-form" data-movie-id="tt1630029">
+										<label for="opinion">Deixe sua opinião:</label>
+										<textarea class="opinion" name="opinion" rows="4" cols="50"></textarea>
+						
+										<button type="submit">Enviar Opinião</button>
+									</form>
+						
+									<!-- Contêiner para opiniões dos usuários -->
+									<div class="user-opinions-container" id="user-opinions-container-tt1630029"></div>
+								</div>
+							</div>
+						</div>
+						<!-- Filme 3 -->
+						<div class="movie movie-item" id="movie-tt8760708">
+							<!-- A classe "movie" agora inclui um ID específico -->
+							<figure class="movie-poster">
+								<img id="movie-poster-img-tt8760708" src="" alt="">
+							</figure>
+							<div class="movie-card">
+								<div class="movie-info">
+									<!-- Título e Sinopse -->
+									<div class="movie-titlereview">
+										<a href="https://www.primevideo.com/-/pt/detail/M3GAN/0QJ0Z4MYHTZOWRFYU9VSMODPP3" target="_blank">M3GAN</a>
+									</div>
+									<p class="movie-synopsis2">M3GAN é uma maravilha da inteligência artificial, uma boneca realista programada para ser a melhor amiga de uma criança. Uma robótica brilhante dá a sua jovem sobrinha um protótipo M3GAN, mas a máquina logo se torna violenta.</p>
+						
+									<!-- Informações adicionais e Estrelas agrupados em uma div -->
+									<div class="filmedetalheseavaliacao">
+										<ul class="filmedetalhes">
+											<li><strong>Data de Lançamento:</strong> 5 de janeiro de 2023 </li>
+											<li><strong>Gênero:</strong> Ficção Científica, Terror, Comédia</li>
+										</ul>
+									</div>
+						
+									<!-- Formulário para a opinião -->
+									<form id="opinion-form-tt8760708" class="opinion-form" data-movie-id="tt8760708">
+										<label for="opinion">Deixe sua opinião:</label>
+										<textarea class="opinion" name="opinion" rows="4" cols="50"></textarea>
+						
+										<button type="submit">Enviar Opinião</button>
+									</form>
+						
+									<!-- Contêiner para opiniões dos usuários -->
+									<div class="user-opinions-container" id="user-opinions-container-tt8760708"></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Filme 4 -->
+						<div class="movie movie-item" id="movie-tt11116912">
+							<!-- A classe "movie" agora inclui um ID específico -->
+							<figure class="movie-poster">
+								<img id="movie-poster-img-tt11116912" src="" alt="">
+							</figure>
+							<div class="movie-card">
+								<div class="movie-info">
+									<!-- Título e Sinopse -->
+									<div class="movie-titlereview">
+										<a href="https://www.netflix.com/br/title/81245455" target="_blank">Troll</a>
+									</div>
+									<p class="movie-synopsis2">Após mil anos, na Noruega, uma criatura que até então era conhecida apenas como um poderoso troll do folclore local desperta e começa a destruir tudo que encontra em sua frente. Os moradores da capital, desesperados, tentam achar um meio para deter essa força desconhecida. Mas como fazer isso se, dias antes, ninguém acreditava que uma criatura assim poderia realmente existir?</p>
+						
+									<!-- Informações adicionais e Estrelas agrupados em uma div -->
+									<div class="filmedetalheseavaliacao">
+										<ul class="filmedetalhes">
+											<li><strong>Data de Lançamento:</strong> 30 de novembro de 2022 </li>
+											<li><strong>Gênero:</strong> Fantasia, Ação, Aventura</li>
+										</ul>
+									</div>
+						
+									<!-- Formulário para a opinião -->
+									<form id="opinion-form-tt11116912" class="opinion-form" data-movie-id="tt11116912">
+										<label for="opinion">Deixe sua opinião:</label>
+										<textarea class="opinion" name="opinion" rows="4" cols="50"></textarea>
+						
+										<button type="submit">Enviar Opinião</button>
+									</form>
+						
+									<!-- Contêiner para opiniões dos usuários -->
+									<div class="user-opinions-container" id="user-opinions-container-tt11116912"></div>
+								</div>
+							</div>
+						</div>
+						<!-- Filme 5 -->
+						<div class="movie movie-item" id="movie-tt6443346">
+							<!-- A classe "movie" agora inclui um ID específico -->
+							<figure class="movie-poster">
+								<img id="movie-poster-img-tt6443346" src="" alt="">
+							</figure>
+							<div class="movie-card">
+								<div class="movie-info">
+									<!-- Título e Sinopse -->
+									<div class="movie-titlereview">
+										<a href="https://www.hbomax.com/br/pt/feature/urn:hbo:feature:GY1nq3gE3nahGhwEAAABC" target="_blank">Black Adam</a>
+									</div>
+									<p class="movie-synopsis2">Adão Negro foi um servo durante toda a sua vida, até a sua morte trágica. No entanto, ele renasceu como um deus, recebendo os poderes de sete deuses egípcios, e foi preso logo em seguida. Quando Adão Negro finalmente se liberta de sua tumba, é para ressurgir como um anti-herói que estabelecerá um novo nível de justiça no mundo moderno.</p>
+						
+									<!-- Informações adicionais e Estrelas agrupados em uma div -->
+									<div class="filmedetalheseavaliacao">
+										<ul class="filmedetalhes">
+											<li><strong>Data de Lançamento:</strong> 18 de outubro de 2022 </li>
+											<li><strong>Gênero:</strong> Fantasia, Ação, Ficção Científica</li>
+										</ul>
+									</div>
+						
+									<!-- Formulário para a opinião -->
+									<form id="opinion-form-tt6443346" class="opinion-form" data-movie-id="tt6443346">
+										<label for="opinion">Deixe sua opinião:</label>
+										<textarea class="opinion" name="opinion" rows="4" cols="50"></textarea>
+						
+										<button type="submit">Enviar Opinião</button>
+									</form>
+						
+									<!-- Contêiner para opiniões dos usuários -->
+									<div class="user-opinions-container" id="user-opinions-container-tt6443346"></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Filme 6 -->
+						<div class="movie movie-item" id="movie-tt0499549">
+							<!-- A classe "movie" agora inclui um ID específico -->
+							<figure class="movie-poster">
+								<img id="movie-poster-img-tt0499549" src="" alt="">
+							</figure>
+							<div class="movie-card">
+								<div class="movie-info">
+									<!-- Título e Sinopse -->
+									<div class="movie-titlereview">
+										<a href="https://www.disneyplus.com/pt-br/movies/avatar/2YOnkRN4LwZZ" target="_blank">Avatar</a>
+									</div>
+									<p class="movie-synopsis2">No exuberante mundo alienígena de Pandora vivem os Na'vi, seres que parecem ser primitivos, mas são altamente evoluídos. Como o ambiente do planeta é tóxico, foram criados os avatares, corpos biológicos controlados pela mente humana que se movimentam livremente em Pandora. Jake Sully, um ex-fuzileiro naval paralítico, volta a andar através de um avatar e se apaixona por uma Na'vi. Esta paixão leva Jake a lutar pela sobrevivência de Pandora.</p>
+						
+									<!-- Informações adicionais e Estrelas agrupados em uma div -->
+									<div class="filmedetalheseavaliacao">
+										<ul class="filmedetalhes">
+											<li><strong>Data de Lançamento:</strong> 14 de dezembro de 2009 </li>
+											<li><strong>Gênero:</strong> Fantasia, Ação, Ficção Científica, Aventura</li>
+										</ul>
+									</div>
+						
+									<!-- Formulário para a opinião -->
+									<form id="opinion-form-tt0499549" class="opinion-form" data-movie-id="tt0499549">
+										<label for="opinion">Deixe sua opinião:</label>
+										<textarea class="opinion" name="opinion" rows="4" cols="50"></textarea>
+						
+										<button type="submit">Enviar Opinião</button>
+									</form>
+						
+									<!-- Contêiner para opiniões dos usuários -->
+									<div class="user-opinions-container" id="user-opinions-container-tt0499549"></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Filme 7 -->
+						<div class="movie movie-item" id="movie-tt3447590">
+							<!-- A classe "movie" agora inclui um ID específico -->
+							<figure class="movie-poster">
+								<img id="movie-poster-img-tt3447590" src="" alt="">
+							</figure>
+							<div class="movie-card">
+								<div class="movie-info">
+									<!-- Título e Sinopse -->
+									<div class="movie-titlereview">
+										<a href="https://www.netflix.com/br/title/80993016" target="_blank">Roald Dahl's Matilda the Musical</a>
+									</div>
+									<p class="movie-synopsis2">Matilda, uma garota extraordinária armada com uma mente afiada e uma imaginação vívida, ousa se posicionar contra seus pais opressores e a diretora de sua escola para mudar sua vida.</p>
+						
+									<!-- Informações adicionais e Estrelas agrupados em uma div -->
+									<div class="filmedetalheseavaliacao">
+										<ul class="filmedetalhes">
+											<li><strong>Data de Lançamento:</strong> 24 de novembro de 2022 </li>
+											<li><strong>Gênero:</strong> Fantasia, Familia, Comédia</li>
+										</ul>
+									</div>
+						
+									<!-- Formulário para a opinião -->
+									<form id="opinion-form-tt3447590" class="opinion-form" data-movie-id="tt3447590">
+										<label for="opinion">Deixe sua opinião:</label>
+										<textarea class="opinion" name="opinion" rows="4" cols="50"></textarea>
+						
+										<button type="submit">Enviar Opinião</button>
+									</form>
+						
+									<!-- Contêiner para opiniões dos usuários -->
+									<div class="user-opinions-container" id="user-opinions-container-tt3447590"></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Filme 8 -->
+						<div class="movie movie-item" id="movie-tt9114286">
+							<!-- A classe "movie" agora inclui um ID específico -->
+							<figure class="movie-poster">
+								<img id="movie-poster-img-tt9114286" src="" alt="">
+							</figure>
+							<div class="movie-card">
+								<div class="movie-info">
+									<!-- Título e Sinopse -->
+									<div class="movie-titlereview">
+										<a href="https://www.disneyplus.com/pt-br/movies/black-panther-wakanda-forever/7MAONYZ92wDT" target="_blank">Black Panther: Wakanda Forever</a>
+									</div>
+									<p class="movie-synopsis2">Após a morte de T'Challa, Wakanda fica sem um Pantera Negra. Enquanto as potências mundiais clamam para obter acesso ao Vibranium, um novo inimigo rompe as fronteiras de Wakanda. A rainha Romonda deve escolher entre unir forças com essa nova ameaça ou potencialmente colocar seu povo em risco. Enquanto isso, Shuri, Okoye, Nakia, MBaku e alguns heróis inesperados devem superar a dor de perder um dos maiores super-heróis do mundo e enfrentar esse poderoso adversário e tomar seus lugares entre os lendários heróis de Wakanda.</p>
+						
+									<!-- Informações adicionais e Estrelas agrupados em uma div -->
+									<div class="filmedetalheseavaliacao">
+										<ul class="filmedetalhes">
+											<li><strong>Data de Lançamento:</strong> 10 de novembro de 2022 </li>
+											<li><strong>Gênero:</strong> Ação, Aventura, Ficção Científica</li>
+										</ul>
+									</div>
+						
+									<!-- Formulário para a opinião -->
+									<form id="opinion-form-tt9114286" class="opinion-form" data-movie-id="tt9114286">
+										<label for="opinion">Deixe sua opinião:</label>
+										<textarea class="opinion" name="opinion" rows="4" cols="50"></textarea>
+						
+										<button type="submit">Enviar Opinião</button>
+									</form>
+						
+									<!-- Contêiner para opiniões dos usuários -->
+									<div class="user-opinions-container" id="user-opinions-container-tt9114286"></div>
+								</div>
+							</div>
+						</div>
+						<!-- Filme 9 -->
+						<div class="movie movie-item" id="movie-tt10298840">
+							<!-- A classe "movie" agora inclui um ID específico -->
+							<figure class="movie-poster">
+								<img id="movie-poster-img-tt10298840" src="" alt="">
+							</figure>
+							<div class="movie-card">
+								<div class="movie-info">
+									<!-- Título e Sinopse -->
+									<div class="movie-titlereview">
+										<a href="https://www.disneyplus.com/pt-br/movies/strange-world/1OVzv6hnhOFm" target="_blank" >Strange World</a>
+									</div>
+									<p class="movie-synopsis2">A família Clade não é nada convencional. Eles fazem parte de um legado de exploradores que se aventuram em novas terras e lugares desconhecidos, enfrentando caminhos traiçoeiros em busca de conhecimento. Sua tripulação conta com uma bolha travessa e um cãozinho de três patas, além de outras criaturas surpreendentes. No entanto, as diferenças e conflitos entre eles podem colocar a última missão em risco.</p>
+						
+									<!-- Informações adicionais e Estrelas agrupados em uma div -->
+									<div class="filmedetalheseavaliacao">
+										<ul class="filmedetalhes">
+											<li><strong>Data de Lançamento:</strong> 22 de novembro de 2022 </li>
+											<li><strong>Gênero:</strong> Animação, Aventura, Ficção Científica, Família</li>
+										</ul>
+									</div>
+						
+									<!-- Formulário para a opinião -->
+									<form id="opinion-form-tt10298840" class="opinion-form" data-movie-id="tt10298840">
+										<label for="opinion">Deixe sua opinião:</label>
+										<textarea class="opinion" name="opinion" rows="4" cols="50"></textarea>
+						
+										<button type="submit">Enviar Opinião</button>
+									</form>
+						
+									<!-- Contêiner para opiniões dos usuários -->
+									<div class="user-opinions-container" id="user-opinions-container-tt10298840"></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Filme 10 -->
+						<div class="movie movie-item" id="movie-tt8093700">
+							<!-- A classe "movie" agora inclui um ID específico -->
+							<figure class="movie-poster">
+								<img id="movie-poster-img-tt8093700" src="" alt="">
+							</figure>
+							<div class="movie-card">
+								<div class="movie-info">
+									<!-- Título e Sinopse -->
+									<div class="movie-titlereview">
+										<a href="https://www.primevideo.com/detail/The-Woman-King/0HFP75255KPPZO269A5UKZQY4L" target="_blank">The Woman King</a>
+									</div>
+									<p class="movie-synopsis2">Em 1800, o general Nanisca treina um grupo de mulheres guerreiras para proteger o reino africano de Dahomey de um inimigo estrangeiro.</p>
+						
+									<!-- Informações adicionais e Estrelas agrupados em uma div -->
+									<div class="filmedetalheseavaliacao">
+										<ul class="filmedetalhes">
+											<li><strong>Data de Lançamento:</strong> 15 de setembro de 2022 </li>
+											<li><strong>Gênero:</strong> Ação, Drama, História</li>
+										</ul>
+									</div>
+						
+									<!-- Formulário para a opinião -->
+									<form id="opinion-form-tt8093700" class="opinion-form" data-movie-id="tt8093700">
+										<label for="opinion">Deixe sua opinião:</label>
+										<textarea class="opinion" name="opinion" rows="4" cols="50"></textarea>
+						
+										<button type="submit">Enviar Opinião</button>
+									</form>
+						
+									<!-- Contêiner para opiniões dos usuários -->
+									<div class="user-opinions-container" id="user-opinions-container-tt8093700"></div>
+								</div>
+							</div>
+						</div>
+					<div class="pagination">
+						<a href="#" class="page-number prev"><i class="fa fa-angle-left"></i></a>
+						<span class="page-number current">1</span>
+						<a href="#" class="page-number">2</a>
+						<a href="#" class="page-number">3</a>
+						<a href="#" class="page-number">4</a>
+						<a href="#" class="page-number">5</a>
+						<a href="#" class="page-number next"><i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div> <!-- .container -->
+		</main>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Sobre nós</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore vitae mollitia
+								nesciunt saepe cupiditate</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Recente Review</h3>
+							<ul class="no-bullet">
+								<li>Lorem ipsum dolor</li>
+								<li>Sit amet consecture</li>
+								<li>Dolorem respequem</li>
+								<li>Invenore veritae</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Ajuda</h3>
+							<ul class="no-bullet">
+								<li>Lorem ipsum dolor</li>
+								<li>Sit amet consecture</li>
+								<li>Dolorem respequem</li>
+								<li>Invenore veritae</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Junte-se a nós</h3>
+							<ul class="no-bullet">
+								<li>Lorem ipsum dolor</li>
+								<li>Sit amet consecture</li>
+								<li>Dolorem respequem</li>
+								<li>Invenore veritae</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Redes Sociais</h3>
+							<ul class="no-bullet">
+								<li>Linkedin</li>
+								<li>GitHub</li>
+								<li>Youtube</li>
+								<li>Pinterest</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Fique por dentro</h3>
+							<form action="#" class="subscribe-form">
+								<input type="text" placeholder="Seu e-mail">
+							</form>
+						</div>
+					</div>
+				</div> <!-- .row -->
+
+				<div class="colophon">Movie Review, Designed by Pedro Henrique.</div>
+			</div> <!-- .container -->
+
+		</footer>
+	</div>
+	<!-- Default snippet for navigation -->
+
+	<script>
+		$(document).ready(function () {
+			// Função para carregar imagens a partir do atributo 'backdrops'
+			function fetchMovieImages(imdbId) {
+				$.ajax({
+					url: "http://localhost:8080/api/v1/movies/" + imdbId,
+					method: "GET",
+					success: function (movie) {
+						// Verifica se o filme possui backdrops
+						if (movie.backdrops && movie.backdrops.length > 0) {
+							// Use a primeira imagem do array 'backdrops' como imagem do filme
+							var backdropUrl = movie.backdrops[0];
+
+							// Atualiza a tag de imagem correta usando o ID do filme
+							$("#movie-poster-img-" + imdbId).attr("src", backdropUrl);
+						} else {
+							// Se não houver backdrops, use uma imagem padrão
+							$("#movie-poster-img-" + imdbId).attr("src", "URL_DA_IMAGEM_PADRAO");
+						}
+					},
+					error: function (error) {
+						console.log("Erro ao obter informações do filme:", error);
+					}
+				});
+			}
+
+			// Carrega as imagens para cada filme na inicialização da página
+			$(".opinion-form").each(function () {
+				var imdbId = $(this).data("movie-id");
+				fetchMovieImages(imdbId);
+			});
+		});
+	</script>
+
+
+<script>
+    $(document).ready(function () {
+        // Intercepta o envio do formulário
+        $(".opinion-form").submit(function (event) {
+            event.preventDefault();
+
+            // Obtém a opinião do usuário
+            var opinion = $(this).find(".opinion").val();
+
+            // Obtém o IMDb ID específico do filme relacionado à opinião
+            var imdbId = $(this).attr("id").replace("opinion-form-", "");
+
+            // Monta o objeto para envio ao backend
+            var reviewData = {
+                reviewBody: opinion,
+                imdbId: imdbId
+            };
+
+            // Envia a opinião para o backend
+            $.ajax({
+                url: "http://localhost:8080/api/v1/reviews",
+                method: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(reviewData),
+                success: function (response) {
+                    alert("Opinião enviada com sucesso!");
+
+                    // Limpa o campo de opinião após o envio bem-sucedido
+                    $(this).find(".opinion").val("");
+                },
+                error: function (error) {
+                    console.log("Erro ao enviar opinião:", error);
+                }
+            });
+        });
+    });
+</script>
+
+
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>

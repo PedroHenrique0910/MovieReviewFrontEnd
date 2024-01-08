@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+
+	<title>Movie Review | About</title>
+
+	<!-- Loading third party fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Loading main css file -->
+	<link rel="stylesheet" href="style.css">
+
+	<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+</head>
+
+<style>
+	.section-title {
+		color: #ffaa3c;
+	}
+
+	body {
+		background-color: #000000;
+		/* Cor de fundo do site */
+		color: #ffffff;
+		/* Cor do texto padrão no site */
+	}
+
+	.about-me-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #000000;
+		height: 100vh;
+	}
+
+	.about-me-box {
+		background-color: #000000;
+		padding: 50px;
+		border-radius: 90px;
+		box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+		color: #ffffff;
+		margin-left: 310px;
+		margin-top: 30px;
+		border: 2px solid #ffaa3c;
+	}
+
+	.about-me-box ul {
+		list-style-type: none;
+		padding: 0;
+		color: #ffaa3c;
+	}
+
+	.about-me-box li {
+		margin-bottom: 10px;
+	}
+	@media only screen and (max-width: 768px) {
+    .about-me-box {
+        margin-left: 0; /* Remover a margem à esquerda em telas menores */
+        margin-top: 20px; /* Reduzir a margem superior em telas menores */
+        text-align: center; /* Centralizar o texto */
+    }
+}
+
+	.leading {
+		color: #ffaa3c;
+	}
+
+	.team {
+		text-align: center;
+		margin: 0 0 30px;
+	}
+
+	.team .team-image {
+		width: 330px;
+		height: 330px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto 30px;
+	}
+
+	.team .team-image img {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.team .team-name {
+		font-size: 16px;
+		font-size: 1.0666666667em;
+		margin: 0;
+		margin-left: 70px;
+	}
+
+	.team .team-title {
+		font-size: 12px;
+		font-size: 0.8em;
+		display: flex;
+		margin-left: 108px;
+	}
+
+	@media only screen and (max-width: 768px) {
+    .team .team-name {
+        margin-left: 0; /* Reduza ou ajuste a margem conforme necessário */
+        text-align: center; /* Alinhe o texto ao centro */
+    }
+
+    .team .team-title {
+        margin-left: 120px; /* Reduza ou ajuste a margem conforme necessário, e adicione a unidade 'px' */
+        margin-right: 0; /* Ajuste a margem conforme necessário para mover para a direita */
+        text-align: center; /* Alinhe o texto ao centro */
+    }
+}
+
+
+	.social-links {
+		margin: 20px 0;
+		margin-left: 113px;
+		display: flex;
+	}
+
+	.social-links a {
+		color: white;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		border-radius: 50%;
+		line-height: 30px;
+		margin-left: 10px;
+		background-color: #204385;
+		transition: background-color 0.3s ease;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@media only screen and (max-width: 768px) {
+    .social-links {
+        margin: 20px 0;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .social-links a {
+        margin-left: 5px; /* Reduzir a margem entre os ícones */
+    }
+}
+
+	.social-links a:hover {
+		background-color: #2a58ae;
+	}
+
+	/* Cor de fundo específica para o LinkedIn */
+	.social-links .linkedin {
+		background-color: #0077b5;
+	}
+
+	/* Cor de fundo ao passar o mouse no LinkedIn */
+	.social-links .linkedin:hover {
+		background-color: #005c99;
+	}
+
+	/* Cor de fundo específica para o GitHub */
+	.social-links .github {
+		background-color: #ffffff;
+	}
+
+	/* Cor de fundo ao passar o mouse no GitHub */
+	.social-links .github:hover {
+		background-color: #000;
+	}
+</style>
+
+
+<body>
+
+
+	<div id="site-content">
+		<header class="site-header">
+			<div class="container">
+				<a href="index.html" id="branding">
+					<img src="images/logo.png" alt="" class="logo">
+					<div class="logo-copy">
+						<h1 class="site-title">Moview Review</h1>
+						<small class="site-description">Magia em Quadros</small>
+					</div>
+				</a> <!-- #branding -->
+
+				<div class="main-navigation">
+					<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+					<ul class="menu">
+						<li class="menu-item"><a href="index.html">Home</a></li>
+						<li class="menu-item"><a href="review.html">Movie review</a></li>
+						<li class="menu-item current-menu-item"><a href="about.html">Sobre</a></li>
+						<li class="menu-item"><a href="joinus.html">Junte-se a nós</a></li>
+						<li class="menu-item"><a href="https://www.linkedin.com/in/pedrohf0910/" target="_blank">Contato</a></li>
+					</ul> <!-- .menu -->
+
+				</div> <!-- .main-navigation -->
+
+			</div>
+		</header>
+		<main class="main-content">
+			<div class="container">
+				<div class="page">
+					<div class="breadcrumbs">
+						<a href="index.html">Home</a>
+						<span>About us</span>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<figure><img src="./icons/fundo-de-cinema-ainda-vida_23-2150743146.jpg" alt="figure image">
+							</figure>
+						</div>
+						<div class="col-md-8">
+							<p class="leading">A Paixão que Nos Conecta ao Mundo do Cinema</p>
+							<br>
+							<p>Bem-vindo à nossa plataforma de análise cinematográfica, onde buscamos proporcionar uma
+								experiência visual envolvente e uma oportunidade única para os amantes do cinema
+								expressarem suas opiniões sobre os mais variados filmes. Exploramos cada filme como uma
+								obra-prima única, destacando detalhes que tornam cada narrativa digna de apreciação. Em
+								um design cuidadosamente elaborado, oferecemos uma interface intuitiva que convida os
+								usuários a mergulharem nas análises, compartilharem suas próprias críticas e descobrirem
+								novas pérolas cinematográficas.</p>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-9">
+							<h2 class="section-title">Visão &amp; Missão</h2>
+							<p>Transformar a maneira como as pessoas vivenciam o cinema, oferecendo uma jornada única e
+								envolvente a cada visita à nossa plataforma. Estamos empenhados em criar um espaço onde
+								a magia do cinema transcende a tela, proporcionando experiências que tocam o coração,
+								desafiam a mente e conectam as almas dos amantes do cinema. </p>
+
+							<p>Enxergamos um horizonte em que a nossa plataforma seja a porta de entrada para uma
+								comunidade global de apaixonados por cinema, unidos pela busca incessante por
+								experiências cinematográficas autênticas. Visualizamos um espaço onde a diversidade de
+								vozes encontra um lar, e cada interação contribui para a construção de um legado
+								coletivo de apreciação e compreensão da arte cinematográfica.</p>
+						</div>
+						<br>
+						<div class="col-md-3">
+							<h2 class="section-title">Links úteis</h2>
+							<ul class="arrow">
+								<li><a href="#">Eiusmod tempor incididunt</a></li>
+								<li><a href="#">Tenim ad minim venia</a></li>
+								<li><a href="#">Quis nostrud exercitation</a></li>
+								<li><a href="#">Ullamco laboris reprehenderit</a></li>
+								<li><a href="#">Duis aute dolor voluptat</a></li>
+								<li><a href="#">Velit esse cillum dolore</a></li>
+								<li><a href="#">Excepteur sint occaeca</a></li>
+							</ul>
+						</div>
+						<br>
+					</div> <!-- .row -->
+
+					<h2 class="section-title">Sobre o Autor e Desenvolvedor</h2>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="team">
+								<figure class="team-image"><img src="C:\Users\pedro\OneDrive\Área de Trabalho\Eu.jpg"
+										alt="Imagem de Pedro Henrique"></figure>
+								<h2 class="team-name">Pedro Henrique</h2>
+								<small class="team-title">Criador e Fundador</small>
+								<div class="social-links">
+									<a href="https://www.linkedin.com/in/pedrohf0910/" target="_blank"> <img
+											src="./icons/linkedin.png" alt=""> </a>
+									<a href="https://github.com/PedroHenrique0910" target="_blank"><img
+											src="./icons/github.png" alt="" style="border-radius: 50%;"></a>
+								</div>
+							</div>
+						</div>
+						<!-- Adicione a nova div para informações -->
+						<div class="about-me-box">
+							<p>Olá! Me chamo Pedro Henrique, tenho 24 anos e sou natural de São Paulo Capital.</p>
+							<br>
+							<p>Bem-vindo ao meu site dedicado à sétima arte, o cinema! Quero te contar um pouco mais
+								sobre as tecnologias usadas para a criação deste site:</p>
+							<br>
+							<ul>
+								<li>O site foi desenvolvido em CSS, HTML e JavaScript no front-end.</li>
+								<li>No back-end, utilizei Spring Boot e Java.</li>
+								<li>O banco de dados do site é gerenciado pelo MongoDB.</li>
+							</ul>
+							<p>Explorando este espaço, você poderá opinar sobre obras cinematográficas, recomendações e
+								muito
+								mais. Sinta-se à vontade para se conectar comigo nas redes sociais!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</main>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Sobre nós</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore vitae mollitia
+								nesciunt saepe cupiditate</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Recente Review</h3>
+							<ul class="no-bullet">
+								<li>Lorem ipsum dolor</li>
+								<li>Sit amet consecture</li>
+								<li>Dolorem respequem</li>
+								<li>Invenore veritae</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Ajuda</h3>
+							<ul class="no-bullet">
+								<li>Lorem ipsum dolor</li>
+								<li>Sit amet consecture</li>
+								<li>Dolorem respequem</li>
+								<li>Invenore veritae</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Junte-se a nós</h3>
+							<ul class="no-bullet">
+								<li>Lorem ipsum dolor</li>
+								<li>Sit amet consecture</li>
+								<li>Dolorem respequem</li>
+								<li>Invenore veritae</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Redes Sociais</h3>
+							<ul class="no-bullet">
+								<li>Linkedin</li>
+								<li>GitHub</li>
+								<li>Youtube</li>
+								<li>Pinterest</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="widget">
+							<h3 class="widget-title">Fique por dentro</h3>
+							<form action="#" class="subscribe-form">
+								<input type="text" placeholder="Seu e-mail">
+							</form>
+						</div>
+					</div>
+				</div> <!-- .row -->
+
+				<div class="colophon">Movie Review, Designed by Pedro Henrique.</div>
+			</div> <!-- .container -->
+
+		</footer>
+	</div>
+	<!-- Default snippet for navigation -->
+
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>

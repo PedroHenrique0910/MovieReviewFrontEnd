@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Movie Review</title>
+
+    <!-- Loading third party fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+
+
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include the Slick Carousel CSS and JS files from CDN -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/ie-support/html5.js"></script>
+    <script src="js/ie-support/respond.js"></script>
+    <![endif]-->
+
+
+    <style>
+        body {
+            background-color: #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="site-content">
+        <header class="site-header">
+            <div class="container">
+                <a href="index.html" id="branding">
+                    <img src="images/logo.png" alt="" class="logo">
+                    <div class="logo-copy">
+                        <h1 class="site-title">Moview Review</h1>
+                        <small class="site-description">Magia em Quadros</small>
+                    </div>
+                </a> <!-- #branding -->
+
+                <div class="main-navigation">
+                    <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                    <ul class="menu ">
+                        <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="review.html">Movie review</a></li>
+                        <li class="menu-item"><a href="about.html">Sobre</a></li>
+                        <li class="menu-item"><a href="joinus.html">Junte-se a nós</a></li>
+                        <li class="menu-item"><a href="https://www.linkedin.com/in/pedrohf0910/" target="_blank">Contato</a></li>
+                    </ul> <!-- .menu -->
+                </div> <!-- .main-navigation -->
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="container">
+                <div class="page">
+                    <div class="row">
+                        <!-- Carrossel -->
+                        <div class="movie-slider-container col-md-6">
+                            <div class="slider" id="movie-slider">
+                                <!-- Movies will be dynamically added here -->
+                            </div>
+                        </div>
+
+                        <!-- Detalhes ao lado do carrossel -->
+                        <div class="movie-details-container col-md-6">
+                            <div class="row movie-details">
+                                <div class="col-md-12">
+                                    <h2 class="movie-title"></h2>
+                                    <p class="movie-synopsis"></p>
+                                    <p class="release-date"></p>
+                                    <a href="#" class="trailer-link" target="_blank">Assistir o Trailer</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Últimas Notícias ao lado do carrossel -->
+                        <div class="latest-news-container col-md-6">
+                            <!-- Seu bloco de notícias aqui -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="widget">
+                            <h3 class="widget-title">Sobre nós</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore vitae mollitia
+                                nesciunt saepe cupiditate</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="widget">
+                            <h3 class="widget-title">Recente Review</h3>
+                            <ul class="no-bullet">
+                                <li>Lorem ipsum dolor</li>
+                                <li>Sit amet consecture</li>
+                                <li>Dolorem respequem</li>
+                                <li>Invenore veritae</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="widget">
+                            <h3 class="widget-title">Ajuda</h3>
+                            <ul class="no-bullet">
+                                <li>Lorem ipsum dolor</li>
+                                <li>Sit amet consecture</li>
+                                <li>Dolorem respequem</li>
+                                <li>Invenore veritae</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="widget">
+                            <h3 class="widget-title">Junte-se a nós</h3>
+                            <ul class="no-bullet">
+                                <li>Lorem ipsum dolor</li>
+                                <li>Sit amet consecture</li>
+                                <li>Dolorem respequem</li>
+                                <li>Invenore veritae</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="widget">
+                            <h3 class="widget-title">Redes Sociais</h3>
+                            <ul class="no-bullet">
+                                <li>Linkedin</li>
+                                <li>GitHub</li>
+                                <li>Youtube</li>
+                                <li>Pinterest</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="widget">
+                            <h3 class="widget-title">Fique por dentro</h3>
+                            <form action="#" class="subscribe-form">
+                                <input type="text" placeholder="Seu e-mail">
+                            </form>
+                        </div>
+                    </div>
+                </div> <!-- .row -->
+
+                <div class="colophon">Movie Review, Designed by Pedro Henrique.</div>
+            </div> <!-- .container -->
+
+        </footer>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+    // Ajuste dinâmico do padding
+    function adjustPadding() {
+        $(window).resize(adjustPadding);
+    }
+
+    var apiurl = "http://localhost:8080/api/v1/movies";
+    var detailsContainer = $(".movie-details");
+
+    function loadMovies() {
+        $.ajax({
+            url: apiurl,
+            method: "GET",
+            dataType: "json",
+            success: function (data) {
+                displayMovies(data);
+            },
+            error: function (error) {
+                console.log("Erro ao obter a lista de filmes:", error);
+            }
+        });
+    }
+
+    function displayMovies(movies) {
+        var movieSlider = $("#movie-slider");
+
+        movieSlider.on('init', function (event, slick) {
+            var currentMovie = movies[slick.currentSlide];
+            displaySynopsis(currentMovie);
+        });
+
+        movieSlider.on('afterChange', function (event, slick, currentSlide) {
+            var currentMovie = movies[currentSlide];
+            displaySynopsis(currentMovie);
+        });
+
+        movies.forEach(function (movie) {
+            var listItem = $("<div>").addClass("latest-movie");
+            var link = $("<a>").attr("href", "#").attr("data-synopsis", movie.sinopse);
+            var image = $("<img>").attr("src", movie.poster).attr("alt", movie.title);
+            var title = $("<h2>")
+                .text(movie.title)
+                .css({
+                    "color": "#FFFFFF",
+                    "background": "#000",
+                    "padding": "7px",
+                    "border-radius": "8px",
+                    "text-align": "center"
+                });
+
+            link.append(image, title);
+            listItem.append(link);
+
+            movieSlider.append(listItem);
+
+            // Adiciona o filme à lista de programação
+            var scheduleItem = $("<li>");
+            scheduleItem.append("<div class='date'>" + formatDate(movie.releaseDate) + "</div>");
+            scheduleItem.append("<h2 class='entry-title'><a href='#'>" + movie.title + "</a></h2>");
+
+            // Adiciona o item da programação à lista
+            $(".movie-schedule").append(scheduleItem);
+        });
+
+        movieSlider.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            adaptiveHeight: true,
+            prevArrow: '<button type="button" class="slick-prev">&#9665;</button>',
+            nextArrow: '<button type="button" class="slick-next">&#9655;</button>'
+        });
+
+        // Atualiza a sinopse ao clicar na programação
+        $(".movie-schedule li").click(function () {
+            var index = $(this).index();
+            movieSlider.slick('slickGoTo', index);
+        });
+
+        // Ajuste dinâmico do padding
+        adjustPadding();
+        $(window).resize(adjustPadding);
+    }
+
+    function displaySynopsis(movie) {
+        var synopsisPlaceholder = detailsContainer.find(".movie-synopsis-placeholder");
+        var synopsis = detailsContainer.find(".movie-synopsis");
+        var releaseDate = detailsContainer.find(".release-date");
+        var trailerLink = detailsContainer.find(".trailer-link");
+
+        // Exibe a sinopse, data de lançamento e link do trailer
+        synopsis.text(movie.sinopse);
+        releaseDate.text("Data de lançamento: " + formatDate(movie.releaseDate));
+        trailerLink.attr("href", movie.trailerLink);
+        synopsisPlaceholder.hide();
+
+        detailsContainer.find(".movie-title").text(movie.title);
+    }
+
+    // Função para formatar a data no formato desejado
+    function formatDate(dateString) {
+        var options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return new Date(dateString).toLocaleDateString(undefined, options);
+    }
+
+    // Iniciar o carrossel automaticamente
+    loadMovies();
+});
+
+
+    </script>
+
+</body>
+
+</html>
