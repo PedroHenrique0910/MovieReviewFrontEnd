@@ -43,7 +43,7 @@ Nosso site é totalmente responsivo e adaptável para dispositivos móveis, gara
 
 Utilizamos um design organizado em um layout de bloco, onde cada item das páginas é disposto de maneira intuitiva, um abaixo do outro. Isso garante uma navegação fácil e agradável, permitindo que você desfrute do conteúdo do Movie Review de maneira otimizada em qualquer dispositivo. 
 
-https://github.com/PedroHenrique0910/MovieReviewFrontEnd/assets/132857723/81560f5f-ed2b-4f3e-9f15-8692afb08533
+https://github.com/PedroHenrique0910/MovieReviewFrontEnd/assets/132857723/95815686-6883-4fbb-a1e3-66be50fb6b93
 
 # Considerações Finais
 O Movie Review é um projeto Full Stack que reúne informações cinematográficas diretamente do banco de dados, proporcionando aos usuários uma experiência completa. Além de exibir detalhes sobre os filmes, a plataforma oferece a funcionalidade de permitir que os usuários compartilhem suas opiniões, contribuindo diretamente para o banco de dados da aplicação.
