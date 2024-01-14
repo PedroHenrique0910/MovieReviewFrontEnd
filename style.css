@@ -2140,11 +2140,11 @@ all and (min-device-pixel-ratio: 1.5) {
 /* Estilos para telas menores (dispositivos móveis) */
 @media screen and (max-width: 768px) {
   .main-content .container {
-    padding: 20px; /* Reduzir o preenchimento */
+    padding: 20px; 
   }
 
   .section-title {
-    font-size: 24px; /* Reduzir o tamanho da fonte */
+    font-size: 24px; 
   }
 
   .movie-schedule .date {
@@ -2159,11 +2159,10 @@ all and (min-device-pixel-ratio: 1.5) {
   }
 
   .movie-schedule .entry-title {
-    font-size: 14px; /* Reduzir o tamanho da fonte */
+    font-size: 14px;
   }
 }
 
-/* Estilos padrão para telas maiores (desktop) */
 .no-bullet {
   list-style: none;
 }
@@ -2211,19 +2210,19 @@ all and (min-device-pixel-ratio: 1.5) {
 /* Estilos para telas menores (dispositivos móveis) */
 @media screen and (max-width: 768px) {
   .leading {
-    font-size: 20px; /* Reduzir o tamanho da fonte */
+    font-size: 20px; 
   }
 
   .page .movie-title {
-    font-size: 28px; /* Reduzir o tamanho da fonte */
+    font-size: 28px; 
   }
 
   .filters {
-    margin-bottom: 30px; /* Reduzir a margem inferior */
+    margin-bottom: 30px; 
   }
 
   .filters select {
-    padding: 10px 30px 10px 10px; /* Ajustar o preenchimento */
+    padding: 10px 30px 10px 10px; 
   }
 }
 
@@ -2283,19 +2282,19 @@ all and (min-device-pixel-ratio: 1.5) {
 /* Estilos para telas menores (dispositivos móveis) */
 @media screen and (max-width: 768px) {
   .pagination .page-number {
-    width: 30px; /* Reduzir a largura */
-    height: 30px; /* Reduzir a altura */
-    font-size: 13px; /* Reduzir o tamanho da fonte */
-    line-height: 1.8; /* Ajustar a altura da linha */
+    width: 30px;
+    height: 30px; 
+    font-size: 13px; 
+    line-height: 1.8; 
   }
 
   .movie-details {
-    padding: 20px; /* Reduzir o preenchimento */
-    margin-left: 0; /* Remover a margem à esquerda */
+    padding: 20px;
+    margin-left: 0; 
   }
 
   .movie-title {
-    font-size: 1.5em; /* Reduzir o tamanho da fonte */
+    font-size: 1.5em; 
   }
 }
 
@@ -2309,7 +2308,7 @@ all and (min-device-pixel-ratio: 1.5) {
   .movie-slider-container {
     max-width: 100%;
     margin-left: 0;
-    margin-bottom: -50px; /* Adicione margem inferior para espaçamento entre elementos adjacentes */
+    margin-bottom: -50px; 
   }
   .release-date{
     text-align: center;
@@ -2320,7 +2319,6 @@ all and (min-device-pixel-ratio: 1.5) {
 .movie-synopsis {
   color: #ffffff;
   margin-top: 35px;
-  /* Ajuste a margem conforme necessário */
   font-family: 'Roboto';
 }
 
@@ -2424,12 +2422,12 @@ all and (min-device-pixel-ratio: 1.5) {
 
 @media screen and (max-width: 767px) {
   .movie-list .movie {
-    width: 100%; /* Define a largura para 100%, fazendo com que cada filme ocupe a largura total da tela */
-    margin-bottom: 20px; /* Adiciona um espaçamento entre os filmes */
+    width: 100%;
+    margin-bottom: 20px; 
   }
 
   .movie-list .movie .movie-poster {
-    width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner pai */
+    width: 100%; 
   }
 }
 
@@ -2438,9 +2436,7 @@ all and (min-device-pixel-ratio: 1.5) {
   overflow: hidden;
   margin-bottom: 20px;
   box-sizing: border-box;
-  /* Garante que a largura inclui padding e bordas */
   border: 2px solid #ffaa3c;
-  /* Adiciona uma borda laranja ao redor do card */
 }
 
 .movie-list .movie .movie-poster img {
@@ -2506,13 +2502,13 @@ all and (min-device-pixel-ratio: 1.5) {
   background-color: #000;
   padding: 15px;
   border-radius: 8px;
-  transition: background-color 0.3s; /* Adicionando uma transição para suavizar o efeito */
+  transition: background-color 0.3s; 
 }
 
 
 .movie-titlereview a:hover {
-  background-color: #ffffff; /* Cor de fundo quando o mouse passa sobre o elemento */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Efeito de brilho usando sombra */
+  background-color: #ffffff; 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
 }
 
 .movie-synopsis2 {
@@ -2523,7 +2519,7 @@ all and (min-device-pixel-ratio: 1.5) {
   border-radius: 8px;
 }
 
-/* Estilo para a lista de detalhes e estrelas */
+
 
 .filmedetalheseavaliacao {
   list-style-type: none;
@@ -2580,7 +2576,3 @@ button {
 button:hover {
   background-color: #84878d;
 }
-
-
-
-

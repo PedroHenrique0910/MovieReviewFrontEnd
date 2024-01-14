@@ -54,7 +54,7 @@
                         <h1 class="site-title">Moview Review</h1>
                         <small class="site-description">Magia em Quadros</small>
                     </div>
-                </a> <!-- #branding -->
+                </a>
 
                 <div class="main-navigation">
                     <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
@@ -64,7 +64,7 @@
                         <li class="menu-item"><a href="about.html">Sobre</a></li>
                         <li class="menu-item"><a href="joinus.html">Junte-se a nós</a></li>
                         <li class="menu-item"><a href="https://www.linkedin.com/in/pedrohf0910/" target="_blank">Contato</a></li>
-                    </ul> <!-- .menu -->
+                    </ul> 
                 </div> <!-- .main-navigation -->
             </div>
         </header>
@@ -73,14 +73,12 @@
             <div class="container">
                 <div class="page">
                     <div class="row">
-                        <!-- Carrossel -->
+
                         <div class="movie-slider-container col-md-6">
                             <div class="slider" id="movie-slider">
-                                <!-- Movies will be dynamically added here -->
                             </div>
                         </div>
 
-                        <!-- Detalhes ao lado do carrossel -->
                         <div class="movie-details-container col-md-6">
                             <div class="row movie-details">
                                 <div class="col-md-12">
@@ -90,11 +88,6 @@
                                     <a href="#" class="trailer-link" target="_blank">Assistir o Trailer</a>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Últimas Notícias ao lado do carrossel -->
-                        <div class="latest-news-container col-md-6">
-                            <!-- Seu bloco de notícias aqui -->
                         </div>
                     </div>
                 </div>
@@ -163,7 +156,7 @@
                             </form>
                         </div>
                     </div>
-                </div> <!-- .row -->
+                </div>
 
                 <div class="colophon">Movie Review, Designed by Pedro Henrique.</div>
             </div> <!-- .container -->
@@ -228,12 +221,10 @@
 
             movieSlider.append(listItem);
 
-            // Adiciona o filme à lista de programação
             var scheduleItem = $("<li>");
             scheduleItem.append("<div class='date'>" + formatDate(movie.releaseDate) + "</div>");
             scheduleItem.append("<h2 class='entry-title'><a href='#'>" + movie.title + "</a></h2>");
 
-            // Adiciona o item da programação à lista
             $(".movie-schedule").append(scheduleItem);
         });
 
@@ -248,13 +239,11 @@
             nextArrow: '<button type="button" class="slick-next">&#9655;</button>'
         });
 
-        // Atualiza a sinopse ao clicar na programação
         $(".movie-schedule li").click(function () {
             var index = $(this).index();
             movieSlider.slick('slickGoTo', index);
         });
 
-        // Ajuste dinâmico do padding
         adjustPadding();
         $(window).resize(adjustPadding);
     }
@@ -265,7 +254,6 @@
         var releaseDate = detailsContainer.find(".release-date");
         var trailerLink = detailsContainer.find(".trailer-link");
 
-        // Exibe a sinopse, data de lançamento e link do trailer
         synopsis.text(movie.sinopse);
         releaseDate.text("Data de lançamento: " + formatDate(movie.releaseDate));
         trailerLink.attr("href", movie.trailerLink);
@@ -273,14 +261,11 @@
 
         detailsContainer.find(".movie-title").text(movie.title);
     }
-
-    // Função para formatar a data no formato desejado
     function formatDate(dateString) {
         var options = { year: 'numeric', month: 'long', day: 'numeric' };
         return new Date(dateString).toLocaleDateString(undefined, options);
     }
 
-    // Iniciar o carrossel automaticamente
     loadMovies();
 });
 
